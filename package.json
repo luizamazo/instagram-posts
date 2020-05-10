@@ -13,7 +13,8 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava",
+		"postinstall": "cd ./node_modules/instagram-user && npm install"
 	},
 	"files": [
 		"index.js"
@@ -27,7 +28,7 @@
 	],
 	"dependencies": {
 		"got": "^10.0.0-alpha.2.2",
-		"instagram-user": "^2.0.0"
+		"instagram-user": "https://github.com/luizamazo/instagram-user.git"
 	},
 	"devDependencies": {
 		"ava": "^2.4.0",
